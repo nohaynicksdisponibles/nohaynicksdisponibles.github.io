@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import logo from "../public/logo.png"
+
 import {NavLink} from "react-router-dom"
 
 const active={
@@ -24,16 +24,16 @@ function NavBar(props){
 
     return(
         <div style={{display:"flex"}}>
-            <img src={logo} style={{width:"100px"}}/>
-            <span style={{flexGrow="1"}}></span>
+           
+            <span style={{flexGrow:"1"}}></span>
             
-            <NavLink id="about" to="/" activeStyle={active}>
+            <NavLink id="about" to="/" activeStyle={active} style={{textDecoration:"none", padding:"10px 15px"}}>
                 <span style={{color:"white",fontSize:"16px"}}>ABOUT ME</span>
             </NavLink>
-            <NavLink id="proyects" to="/proyects" activeStyle={active}>
+            <NavLink id="proyects" to="/proyects" activeStyle={active} style={{textDecoration:"none", padding:"10px 15px"}}>
                 <span style={{color:"white",fontSize:"16px"}}>PROYECTS</span>
             </NavLink>
-            <NavLink id="contact" to="/contact" activeStyle={active}>
+            <NavLink id="contact" to="/contact" activeStyle={active} style={{textDecoration:"none", padding:"10px 20px"}}>
                 <span style={{color:"white",fontSize:"16px"}}>CONTACT ME</span>
             </NavLink>
         </div>
